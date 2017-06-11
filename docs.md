@@ -1,11 +1,11 @@
 ## style.py 
 
-`style.py` trains networks that can transfer styles from artwork into images.
+`style.py` アートワークからイメージにスタイルを移すことができるネットワークをトレーニングします。
 
 **Flags**
-- `--checkpoint-dir`: Directory to save checkpoint in. Required.
-- `--style`: Path to style image. Required.
-- `--train-path`: Path to training images folder. Default: `data/train2014`.
+- `--checkpoint-dir`: チェックポイントを保存するディレクトリ。必須。
+- `--style`: スタイルイメージへのパス。必須。
+- `--train-path`: トレーニング画像フォルダへのパス。デフォルト： `data/train2014`。
 - `--test`: Path to content image to test network on at at every checkpoint iteration. Default: no image.
 - `--test-dir`: Path to directory to save test images in. Required if `--test` is passed a value.
 - `--epochs`: Epochs to train for. Default: `2`.

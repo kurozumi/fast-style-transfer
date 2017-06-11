@@ -1,21 +1,21 @@
 ## style.py 
 
-`style.py` アートワークからイメージにスタイルを移すことができるネットワークをトレーニングします。
+`style.py` アートワークからイメージにスタイルを移すことができるネットワークを訓練します。
 
 **Flags**
 - `--checkpoint-dir`: チェックポイントを保存するディレクトリ。必須。
 - `--style`: スタイルイメージへのパス。必須。
 - `--train-path`: トレーニング画像フォルダへのパス。デフォルト： `data/train2014`。
-- `--test`: Path to content image to test network on at at every checkpoint iteration. Default: no image.
+- `--test`: Path to content image to test network on at every checkpoint iteration. Default: no image.
 - `--test-dir`: Path to directory to save test images in. Required if `--test` is passed a value.
-- `--epochs`: Epochs to train for. Default: `2`.
-- `--batch_size`: Batch size for training. Default: `4`.
+- `--epochs`: 訓練するエポック。デフォルト： `2`。
+- `--batch_size`: 訓練のためのバッチサイズ。デフォルト： `4`。
 - `--checkpoint-iterations`: Number of iterations to go for between checkpoints. Default: `2000`.
 - `--vgg-path`: Path to VGG19 network (default). Can pass VGG16 if you want to try out other loss functions. Default: `data/imagenet-vgg-verydeep-19.mat`.
-- `--content-weight`: Weight of content in loss function. Default: `7.5e0`.
-- `--style-weight`: Weight of style in loss function. Default: `1e2`.
-- `--tv-weight`: Weight of total variation term in loss function. Default: `2e2`.
-- `--learning-rate`: Learning rate for optimizer. Default: `1e-3`.
+- `--content-weight`: 損失関数のコンテンツの重み。デフォルト： `7.5e0`。
+- `--style-weight`: 損失関数のスタイルの重み。デフォルト： `1e2`。
+- `--tv-weight`: 損失関数における総変動期間の重み。デフォルト： `2e2`。
+- `--learning-rate`: オプティマイザの学習率。デフォルト： `1e-3`。
 - `--slow`: For debugging loss function. Direct optimization on pixels using Gatys' approach. Uses `test` image as content value, `test_dir` for saving fully optimized images.
 
 
